@@ -3,11 +3,17 @@
 
 int main(int argc, char* argv[]){
 
-    char c; 
-    while ((c=getchar()) != EOF) {
+    char c;
+    c = getchar(); 
+    while (c != EOF) {
       
          if (!lowercase(c))
-         printf("%c",c);
-    }
+            printf("%c",c);
+
+         if (lowercase(c))
+           printf("%c",c+32);
+	 
+	c = getchar();    
+}
     return 0;
 }

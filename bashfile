@@ -1,0 +1,12 @@
+#!/bin/bash
+
+file1=$1
+
+if [ -a $file1 ]; then
+   lower < $1 > $2
+
+else
+
+  echo "wrong"
+
+fi
